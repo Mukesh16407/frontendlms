@@ -7,9 +7,9 @@ import Footer from './components/Layout/Footer/Footer';
 import { Contact } from './pages/Contact';
 import { Request } from './pages/Request';
 import { About } from './pages/About';
-import { Profile } from './pages/Auth/Profile';
-import { ChangePassword } from './pages/Auth/ChangePassword';
-import { UpdateProfle } from './pages/Auth/UpdateProfle';
+import { Profile } from './pages/Profile/Profile';
+import { ChangePassword } from './pages/Profile/ChangePassword';
+import { UpdateProfle } from './pages/Profile/UpdateProfle';
 import { Login } from './pages/Auth/Login';
 import { Register } from './pages/Auth/Register';
 import { ForgetPassword } from './pages/Auth/ForgetPassword';
@@ -17,11 +17,12 @@ import { ResetPassword } from './pages/Auth/ResetPassword';
 import { NotFound } from './pages/NotFound';
 import { PaymentSuccess } from './pages/Payment/PaymentSuccess';
 import { PaymentFail } from './pages/Payment/PaymentFail';
-import { Dashboard } from './pages/Admin/Dashboard';
-import { CreateCourse } from './pages/Admin/CreateCourse';
+import { Dashboard } from './pages/Admin/Dashboard/Dashboard';
+import { CreateCourse } from './pages/Admin/CreateCourse/CreateCourse';
 import { Users } from './pages/Admin/Users';
-import {Subscribe} from './pages/Subscribe';
-import {AdminCourses} from './pages/Admin/AdminCourses'
+import {Subscribe} from './pages/Payment/Subscribe';
+import {AdminCourses} from './pages/Admin/AdminCourse/AdminCourses'
+import { CoursePage } from './pages/Courses/CoursePage';
 function App() {
   return (
     <BrowserRouter>
@@ -32,14 +33,14 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/courses" element={<Courses />} />
 
-            {/* <Route
+            <Route
               path="/course/:id"
               element={
               
                   <CoursePage/>
               
               }
-            /> */}
+            />
 
             <Route path="/contact" element={<Contact />} />
             <Route path="/request" element={<Request />} />

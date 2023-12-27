@@ -22,7 +22,7 @@ const LinkButton = ({ url = '/', title = 'Home', onClose }) => (
   </Link>
 );
 
-const Header = ({ isAuthenticated = false, user }) => {
+const Header = ({ isAuthenticated = true, user }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
 
