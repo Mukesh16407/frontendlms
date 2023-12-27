@@ -15,7 +15,7 @@ import {
   
  
   
-  const Courses = () => {
+  export const Courses = () => {
     const [keyword, setKeyword] = useState('');
     const [category, setCategory] = useState('');
    
@@ -71,5 +71,5 @@ import {
     );
   };
   
-  export default Courses;
+
   

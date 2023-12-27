@@ -2,7 +2,6 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import './App.css';
 import { Home } from './pages/Home';
 import Header from './components/Layout/Header/Header';
-import Courses from './components/Courses/Courses';
 import Footer from './components/Layout/Footer/Footer';
 import { Contact } from './pages/Contact';
 import { Request } from './pages/Request';
@@ -23,6 +22,7 @@ import { Users } from './pages/Admin/Users';
 import {Subscribe} from './pages/Payment/Subscribe';
 import {AdminCourses} from './pages/Admin/AdminCourse/AdminCourses'
 import { CoursePage } from './pages/Courses/CoursePage';
+import { Courses } from './pages/Courses/Courses';
 function App() {
   return (
     <BrowserRouter>
